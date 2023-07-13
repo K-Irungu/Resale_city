@@ -56,7 +56,7 @@ const Navbar = () => {
 
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             {userPages.map((page) => (
-              <Link href={page.split(' ').join('').toLowerCase()} sx={{ textDecoration: 'none', ml: 1, mr: 1 }}>
+              <Link to={page.split(' ').join('').toLowerCase()} sx={{ textDecoration: 'none', ml: 1, mr: 1 }}>
                 <Button
                   key={page}
                   sx={{ pl: 3, pr: 3, color: 'white', display: 'block' }}
