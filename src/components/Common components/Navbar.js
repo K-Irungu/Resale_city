@@ -40,7 +40,7 @@ const Navbar = () => {
 
           <Box sx={{ flexGrow: 1, justifyContent: "center", display: { xs: 'none', md: 'flex' } }}>
             {mainPages.map((page) => (
-              <Link href={page.toLowerCase()} sx={{ textDecoration: 'none', mr: 1, ml: 1 }}>
+              <Link key={page}href={page.toLowerCase()} sx={{ textDecoration: 'none', mr: 1, ml: 1 }}>
                 <Button
                   key={page}
                   sx={{ pl: 3, pr: 3, color: 'white', display: 'block' }}
@@ -55,19 +55,28 @@ const Navbar = () => {
           </Box>
 
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            {userPages.map((page) => (
-              <Link to={page.split(' ').join('').toLowerCase()} sx={{ textDecoration: 'none', ml: 1, mr: 1 }}>
-                <Button
-                  key={page}
-                  sx={{ pl: 3, pr: 3, color: 'white', display: 'block' }}
-                >
-                  {page}
-                </Button>
+            {userPages.map((page) => 
 
 
-              </Link>
+            
+            (
 
-            ))}
+                <Link key={page} href={page.split(' ').join('').toLowerCase()} sx={{ textDecoration: 'none', ml: 1, mr: 1 }}>
+                  <Button
+                    key={page}
+                    sx={{ pl: 3, pr: 3, color: 'white', display: 'block' }}
+                  >
+                    {page}
+                  </Button>
+
+
+                </Link>
+
+              )
+
+
+            )}
+
           </Box>
 
 
