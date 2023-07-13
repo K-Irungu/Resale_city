@@ -1,0 +1,7 @@
+a:hover{
+    background-color: 	#414a4c;
+}
+a{
+    border-radius: 10px;
+    transition:  0.4s ease;
+}
