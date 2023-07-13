@@ -6,7 +6,7 @@ import Contact from './components/Contact';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import Navbar from './components/Common components/Navbar';
-import Footer from './components/Common components/Footer';
+// import Footer from './components/Common components/Footer';
 
 
 
