@@ -6,7 +6,6 @@ import Contact from './components/Contact';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import Navbar from './components/Common components/Navbar';
-// import Footer from './components/Common components/Footer';
 
 
 
@@ -20,12 +19,11 @@ const App = () => {
           <Route exact path="/" element={<Home />} />
           {/* <Route path="/home" element={<Home />} /> */}
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact"><Contact></Contact></Route>
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
         </Routes>
       </Router>
-      {/* <Footer /> */}
     </>
 
   )
