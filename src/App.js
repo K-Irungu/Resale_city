@@ -17,12 +17,12 @@ const App = () => {
       <Navbar />
       <Router>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/signup" element={<SignUp />} />
+          <Route exact path="/" component={<Home />} />
+          {/* <Route path="/home" component={<Home />} /> */}
+          <Route path="/about" component={<About />} />
+          <Route path="/contact" component={<Contact />} />
+          <Route path="/signin" component={<SignIn />} />
+          <Route path="/signup" component={<SignUp />} />
         </Routes>
       </Router>
       {/* <Footer /> */}
