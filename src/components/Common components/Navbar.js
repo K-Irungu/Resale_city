@@ -42,7 +42,7 @@ const Navbar = () => {
             {mainPages.map((page) => (
               <Link key={page} href={page.split(' ').join('').toLowerCase()} sx={{ textDecoration: 'none', mr: 1, ml: 1 }}>
                 <Button
-                  key={page}
+                  
                   sx={{ pl: 3, pr: 3, color: 'white', display: 'block' }}
                 >
                   {page}
@@ -63,7 +63,7 @@ const Navbar = () => {
 
                 <Link key={page} href={page.split(' ').join('').toLowerCase()} sx={{ textDecoration: 'none', ml: 1, mr: 1 }}>
                   <Button
-                    key={page}
+                    
                     sx={{ pl: 3, pr: 3, color: 'white', display: 'block' }}
                   >
                     {page}
