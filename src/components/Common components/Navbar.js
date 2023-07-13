@@ -40,7 +40,7 @@ const Navbar = () => {
 
           <Box sx={{ flexGrow: 1, justifyContent: "center", display: { xs: 'none', md: 'flex' } }}>
             {mainPages.map((page) => (
-              <Link key={page}href={page.toLowerCase()} sx={{ textDecoration: 'none', mr: 1, ml: 1 }}>
+              <Link key={page} href={page.split(' ').join('').toLowerCase()} sx={{ textDecoration: 'none', mr: 1, ml: 1 }}>
                 <Button
                   key={page}
                   sx={{ pl: 3, pr: 3, color: 'white', display: 'block' }}
