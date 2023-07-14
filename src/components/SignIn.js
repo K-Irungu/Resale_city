@@ -54,6 +54,7 @@ export default function SignIn() {
             label="Enter your email"
             name="email"
             autoComplete="email"
+            
             sx={{ my: '10px' }}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -76,6 +77,7 @@ export default function SignIn() {
             fullWidth
             variant="contained"
             sx={{
+              mt:'10px',
               backgroundColor: '#0e1111',
               borderRadius: '10px',
               paddingTop: '15px',
@@ -87,7 +89,6 @@ export default function SignIn() {
           >
             Sign In
           </Button>
-          <Box mt={2} />
 
           {/* Horizontal line */}
           <div className="hr-container" style={{ marginTop: '40px', marginBottom: '40px' }}>
