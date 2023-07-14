@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from './Common components/Footer'
 import CssBaseline from '@mui/material/CssBaseline';
 
 
@@ -10,7 +9,6 @@ const About = () => {
             <CssBaseline />
 
       <div>About</div>
-      <Footer />
     </>
   )
 }

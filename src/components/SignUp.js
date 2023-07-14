@@ -111,7 +111,6 @@ export default function SignUp() {
           >
             Sign Up
           </Button>
-          <Box mt={2} />
 
           {/* Horizontal line */}
           <div className="hr-container" style={{ marginTop: '40px', marginBottom: '40px' }}>
