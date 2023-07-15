@@ -7,10 +7,9 @@ import Container from '@mui/material/Container';
 function Copyright() {
   return (
     <Typography variant="body2" color="white">
-      {'Copyright © '}
-
+      {'© '}
       {new Date().getFullYear()}
-      {'.'}
+      {' Resale City Ltd. All rights reserved'}
     </Typography>
   );
 }
