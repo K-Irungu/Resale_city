@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import './Navbar.css';
-import CheckroomOutlinedIcon from '@mui/icons-material/CheckroomOutlined';
+
 
 
 const mainPages = ['Home', 'About', 'Contact'];
