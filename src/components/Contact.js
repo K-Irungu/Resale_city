@@ -45,7 +45,7 @@ export default function ContactUs() {
       </Grid>
 
       {/* The form goes here */}
-      <Grid container component="main" sx={{ height: '92vh', position: 'absolute', bgcolor: '#EEEEEE', width: '80%' }}>
+      <Grid container component="main" sx={{ height: '92vh', position: 'absolute', bgcolor: '#EEEEEE', width: '80%', }}>
         <Box sx={{
           display: 'flex',
           flexDirection: 'column',
@@ -139,7 +139,7 @@ export default function ContactUs() {
       </Grid>
 
       {/* The Social Media Logogs fgo here */}
-      <Grid container component="main" sx={{ height: '60%', position: 'absolute', bgcolor: '#0e1111', width: '677px', ml: '53%', my: '9%' }}>
+      <Grid container component="main" sx={{ height: '60%', position: 'absolute', bgcolor: '#0e1111', width: '677px', ml: '53%', my: '9%', boxShadow: '0px 3px 8px rgba(0, 0, 0, 0.5)' }}>
         <Grid item sx={{ width: '80%', height: '80%', padding:6.5 }}>
           <Typography variant="h4" color="white" sx={{ml:1}}>
             Info</Typography>

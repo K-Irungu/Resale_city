@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import './Footer.css'
+
 
 function Copyright() {
   return (
@@ -23,7 +23,8 @@ export default function Footer() {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          minHeight: 'auto'
+          minHeight: 'auto',
+          textAlign:'center',
         }}
       >
 
@@ -38,7 +39,7 @@ export default function Footer() {
         >
           <Container maxWidth="sm">
             <Typography variant="body1" sx={{color:'white'}}>
-              This is the footer
+              {/* This is the footer */}
             </Typography>
             <Copyright />
           </Container>

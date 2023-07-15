@@ -54,7 +54,7 @@ export default function SignIn() {
             label="Enter your email"
             name="email"
             autoComplete="email"
-            
+            autoFocus
             sx={{ my: '10px' }}
             value={email}
             onChange={(e) => setEmail(e.target.value)}

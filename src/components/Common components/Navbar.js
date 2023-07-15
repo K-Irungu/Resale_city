@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import './Navbar.css';
+import CheckroomOutlinedIcon from '@mui/icons-material/CheckroomOutlined';
 
 
 const mainPages = ['Home', 'About', 'Contact'];
@@ -19,23 +20,25 @@ const Navbar = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters >
 
-          <Typography
-            variant="h6"
-            noWrap
+            
+            <Typography
+              variant="h6"
+              noWrap
+              sx={{
+                ml: 2,
+                mr: 2,
+                display: { xs: 'none', md: 'flex' },
+                fontFamily: 'monospace',
+                fontWeight: 700,
+                letterSpacing: '.3rem',
+                color: 'inherit',
+                textDecoration: 'none',
+              }}
+            >
+              RESALE CITY
+            </Typography>
 
-            sx={{
-              ml: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
 
-            }}
-          >
-            RESALE CITY
-          </Typography>
 
 
           <Box sx={{ flexGrow: 1, justifyContent: "center", display: { xs: 'none', md: 'flex' } }}>

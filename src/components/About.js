@@ -9,7 +9,7 @@ import Footer from './Common components/Footer';
 const About = () => {
     return (
         < >
-
+{/* The Title Section with background image */}
             <Paper
                 sx={{
                     position: 'relative',
@@ -21,10 +21,10 @@ const About = () => {
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
                     backgroundImage: `url(https://images.unsplash.com/photo-1514988081842-feeaeac260e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80)`,
+                    boxShadow: '0px 3px 8px rgba(0, 0, 0, 0.4)',
                 }}
             >
-                <CssBaseline />
-
+            <CssBaseline />
                 <Box
                     sx={{
                         position: 'absolute',
@@ -54,9 +54,7 @@ const About = () => {
                 </Grid>
             </Paper>
 
-
-            {/* Second Section: Our Mission */}
-
+{/* First Section: Our Mission */}
             <Paper
                 sx={{
                     position: 'relative',
@@ -125,7 +123,7 @@ const About = () => {
                 </Grid>
             </Paper>
 
-            {/* Third section: Our Vision */}
+{/* Second section: Our Vision */}
             <Paper
                 sx={{
                     position: 'relative',
@@ -195,17 +193,15 @@ const About = () => {
                 </Grid>
             </Paper>
 
-            {/* Fourth section: Our values */}
-
+{/* Third section: Our values */}
             <Paper
                 sx={{
                     position: 'relative',
                     borderRadius: 0,
                     color: '#fff',
                     backgroundColor: "#EEEEEE",
-                    mb:2
-
-
+                    mb:2,
+                    boxShadow: '0px 3px 8px rgba(0, 0, 0, 0.3)', //This adds the shadow effect
                 }}
             >
                 <CssBaseline />
@@ -271,9 +267,8 @@ const About = () => {
                     </Grid>
                 </Grid>
             </Paper>
-            {/* Fifth section: Staff */}
 
-
+{/* Fourth section: Staff */}
             <Paper
                 sx={{
                     position: 'relative',
@@ -312,7 +307,7 @@ const About = () => {
                                 }}
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2Zlc3Npb25hbCUyMGhlYWRzaG90fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60g"
+                                    src="https://media.istockphoto.com/id/1455343282/photo/video-portrait-of-an-indian-man.jpg?s=612x612&w=0&k=20&c=WuFdZZSCcvsht-Uyil-_2-czmfJeWcfwnE6T_ncJLvY="
                                     alt="Person"
                                     style={{
                                         width: '100%',
@@ -354,7 +349,7 @@ const About = () => {
     }}
 >
     <img
-        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2Zlc3Npb25hbCUyMGhlYWRzaG90fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+        src="https://media.istockphoto.com/id/1487228852/photo/young-beautiful-woman-drinks-water-during-class-dehydration.webp?b=1&s=170667a&w=0&k=20&c=zb8eDnnSg95MVgjVb0PsGQ_XwPl8eSlJfNjok7mzxWs="
         alt="Person"
         style={{
             width: '100%',
@@ -374,56 +369,14 @@ const About = () => {
         }}
     >
         <Typography variant="h5" color="white" sx={{ fontWeight: 'bold' }}>
-            Andrew Mutheu
+           Maria Wangui
         </Typography>
         <Typography variant="subtitle1" color="white" sx={{ fontSize: '14px' }}>
             Business Operations Lead
         </Typography>
     </Box>
 </Box>
-
-
-</Grid>
-<Grid item md={3}>
-
-
-<Box
-    sx={{
-        position: 'relative',
-        height: '300px',
-        backgroundColor: 'black',
-        overflow: 'hidden',
-    }}
->
-    <img
-        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2Zlc3Npb25hbCUyMGhlYWRzaG90fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-        alt="Person"
-        style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            filter: 'grayscale(100%)',
-        }}
-    />
-    <Box
-        sx={{
-            position: 'absolute',
-            bottom: 0,
-            left: 0,
-            width: '100%',
-            backgroundColor: 'rgba(0, 0, 0, 0.5)',
-            padding: '16px',
-        }}
-    >
-        <Typography variant="h5" color="white" sx={{ fontWeight: 'bold' }}>
-            Maria Wangui
-        </Typography>
-        <Typography variant="subtitle1" color="white" sx={{ fontSize: '14px' }}>
-            Customer Success Specialist
-        </Typography>
-    </Box>
-</Box>
-
+ 
 
 </Grid>
 <Grid item md={3}>
@@ -438,7 +391,7 @@ const About = () => {
     }}
 >
     <img
-        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2Zlc3Npb25hbCUyMGhlYWRzaG90fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+        src="https://media.istockphoto.com/id/1394347360/photo/confident-young-black-businesswoman-standing-at-a-window-in-an-office-alone.jpg?s=612x612&w=0&k=20&c=tOFptpFTIaBZ8LjQ1NiPrjKXku9AtERuWHOElfBMBvY="
         alt="Person"
         style={{
             width: '100%',
@@ -461,6 +414,48 @@ const About = () => {
             Jenniffer Okumu
         </Typography>
         <Typography variant="subtitle1" color="white" sx={{ fontSize: '14px' }}>
+            Customer Success Specialist
+        </Typography>
+    </Box>
+</Box>
+
+
+</Grid>
+<Grid item md={3}>
+
+
+<Box
+    sx={{
+        position: 'relative',
+        height: '300px',
+        backgroundColor: 'black',
+        overflow: 'hidden',
+    }}
+>
+    <img
+        src="https://media.istockphoto.com/id/1450340623/photo/portrait-of-successful-mature-boss-senior-businessman-in-glasses-asian-looking-at-camera-and.jpg?s=612x612&w=0&k=20&c=f0EqWiUuID5VB_NxBUEDn92W2HLENR15CFFPzr-I4XE="
+        alt="Person"
+        style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            filter: 'grayscale(100%)',
+        }}
+    />
+    <Box
+        sx={{
+            position: 'absolute',
+            bottom: 0,
+            left: 0,
+            width: '100%',
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+            padding: '16px',
+        }}
+    >
+        <Typography variant="h5" color="white" sx={{ fontWeight: 'bold' }}>
+            James Kyalo
+        </Typography>
+        <Typography variant="subtitle1" color="white" sx={{ fontSize: '14px' }}>
             Tech Support
         </Typography>
     </Box>
@@ -480,6 +475,7 @@ const About = () => {
 
                 
             </Paper>
+{/* Footer */}
             <Footer/>
         </>
     )
