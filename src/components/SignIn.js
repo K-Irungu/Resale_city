@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
@@ -7,26 +6,25 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-
 import Link from '@mui/material/Link';
 import './HorizontalLine.css'
 
 
+
+
 export default function SignIn() {
 
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
+  
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Perform form submission logic
-    console.log({  email, password });
-
-    // Clear form fields
-    setEmail('');
-    setPassword('');    
+    const data = new FormData(event.currentTarget)
+    console.log({
+      email: data.get('email'),
+      password: data.get('password')
+    })
+ 
   };
 
 
@@ -56,8 +54,7 @@ export default function SignIn() {
             autoComplete="email"
             autoFocus
             sx={{ my: '10px' }}
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+
           />
           <TextField
             required
@@ -68,8 +65,7 @@ export default function SignIn() {
             id="password"
             autoComplete="current-password"
             sx={{ mt: '10px', mb: '20px' }}
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+
           />
 
           <Button
