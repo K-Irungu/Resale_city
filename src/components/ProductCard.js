@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from '@mui/material/Card';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardContent from '@mui/material/CardContent';
@@ -10,17 +10,16 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import CardActions from '@mui/material/CardActions';
 
 const ProductCard = (props) => {
+  const [isLiked, setIsLiked] = useState(false);
+
+  const handleLikeClick = () => {
+    setIsLiked((prevIsLiked) => !prevIsLiked);
+  };
 
   return (
-    <Card sx={{padding:2}}>
+    <Card sx={{ padding: 2 }}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image={props.picUrl} 
-          alt="Product Image"
-
-        />
+        <CardMedia component="img" height="140" image={props.picUrl} alt="Product Image" />
         <CardContent>
           <Typography gutterBottom variant="h6" component="div">
             {props.title}
@@ -32,10 +31,14 @@ const ProductCard = (props) => {
       </CardActionArea>
       {/* Like and Add to Cart buttons */}
       <CardActions>
-        <IconButton aria-label="add to favorites">
+        <IconButton
+          aria-label="add to favorites"
+          color={isLiked ? 'secondary' : 'default'}
+          onClick={handleLikeClick}
+        >
           <FavoriteIcon />
         </IconButton>
-        <IconButton aria-label="add to cart">
+        <IconButton aria-label="add to cart" onClick={props.onAddToCart}>
           <AddShoppingCartIcon />
         </IconButton>
       </CardActions>

@@ -3,11 +3,13 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
+import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
+
 
 const ReviewSection = () => {
   const [newReview, setNewReview] = useState('');
@@ -64,7 +66,7 @@ const ReviewSection = () => {
   };
 
   return (
-    <div>
+    <Box sx={{padding:5}} >
       <Typography variant="h6" gutterBottom>
         Reviews
       </Typography>
@@ -100,7 +102,7 @@ const ReviewSection = () => {
           Submit Review
         </Button>
       </form>
-    </div>
+    </Box>
   );
 };
 
