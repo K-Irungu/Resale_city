@@ -11,7 +11,7 @@ const Home = () => {
   const secondBoxRef = useRef(null);
 
   const handleRedirect = (endpoint) => {
-    // Replace "/your-target-route" with the actual route you want to redirect to
+// Redirect logic
     window.location.href = `${endpoint}`;
   };
 
@@ -63,7 +63,7 @@ const Home = () => {
                 mr:3,
                 "&:hover":{backgroundColor:"#F4F0EC"}
               }}
-              onClick={handleScrollToSecondBox} // Attach the click event to scroll to the second box
+              onClick={handleScrollToSecondBox} // Attached the click event to scroll to the second box
             >
               Shop Now
             </Button>
@@ -75,7 +75,7 @@ const Home = () => {
 
       {/* Second Box Component */}
       <Box
-      ref={secondBoxRef} // Attach the ref to the second box component
+      ref={secondBoxRef} // Attached the ref to the second box component
       sx={{
         background: 'linear-gradient(50deg, #414a4c 55%, #EEEEEE 45%)',
         backgroundSize: 'cover',

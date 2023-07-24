@@ -13,7 +13,7 @@ import PrelovedParadise from './components/PrelovedParadise';
 const App = () => {
 
 
-  
+
   return (
     <>
       <Navbar />

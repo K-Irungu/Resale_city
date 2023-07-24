@@ -14,6 +14,7 @@ import './HorizontalLine.css'
 
 export default function SignIn() {
 
+
   
 
   const handleSubmit = (event) => {
@@ -24,6 +25,11 @@ export default function SignIn() {
       email: data.get('email'),
       password: data.get('password')
     })
+
+    alert(`Welcome Back ${data.get('email')}!`)
+    window.location.href = "home";
+
+
  
   };
 

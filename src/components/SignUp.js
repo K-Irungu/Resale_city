@@ -27,6 +27,9 @@ export default function SignUp() {
     // Perform form submission logic
     console.log({ name, email, password, agree });
 
+    alert(`Thank you for signing up ${name}! Glad to have you.`)
+    window.location.href = "home";
+
     // Clear form fields
     setName('');
     setEmail('');
