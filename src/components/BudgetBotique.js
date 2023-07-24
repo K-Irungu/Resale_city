@@ -33,7 +33,7 @@ const BudgetBotique = () => {
 
   // Function to handle checkout
   const handleCheckout = () => {
-    alert('Order Confirmed');
+    alert('Success! Your order has been confirmed. Thank you for shopping with us.');
     setCartItems([]); // Clear the cart by setting cartItems to an empty array
   };
 

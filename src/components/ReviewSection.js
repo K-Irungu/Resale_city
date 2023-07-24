@@ -34,7 +34,7 @@ const ReviewSection = () => {
   useEffect(() => {
     const storedReviews = JSON.parse(localStorage.getItem('reviews')) || [];
     setReviews(storedReviews);
-  }, []);
+  }, []); // Empty array as the second argument to run only once during the initial mount
 
   useEffect(() => {
     localStorage.setItem('reviews', JSON.stringify(reviews));
