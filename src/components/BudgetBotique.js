@@ -19,15 +19,15 @@ const BudgetBotique = () => {
           <Grid container spacing={2}>
             {/* Product Card 1 */}
             <Grid item xs={4}>
-              <ProductCard title="Nike Shirt" picUrl="https://images.unsplash.com/photo-1613837233238-c1e78d8b8f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80"/>
+              <ProductCard title="Nike Shirt" picUrl="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dHNoaXJ0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"/>
             </Grid>
             {/* Product Card 2 */}
             <Grid item xs={4}>
-              <ProductCard title="Leather Jacket" picUrl="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dHNoaXJ0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" />
+              <ProductCard title="Leather Jacket" picUrl="https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8amFja2V0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" />
             </Grid>
             {/* Product Card 3 */}
             <Grid item xs={4}>
-              <ProductCard title="Black Jeans" picUrl="https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8amFja2V0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" />
+              <ProductCard title="Black Jeans" picUrl="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dHJvdXNlcnN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" />
             </Grid>
 
             {/* Repeat the above grid items to add more product cards */}
